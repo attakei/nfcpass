@@ -1,18 +1,7 @@
+import { CardInfo } from './card'
 import { ACK } from './usb'
 import { arrayToHexString } from './utils'
 
-
-class CardInfo {
-  public readonly spec: string
-  public readonly idm: string
-  public readonly pmm: string|null
-
-  public constructor (spec: string, idm: string, pmm: string|null) {
-    this.spec = spec
-    this.idm = idm
-    this.pmm = pmm
-  }
-}
 
 class NFCDevice {
   public readonly device: USBDevice
